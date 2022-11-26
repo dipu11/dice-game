@@ -15,7 +15,7 @@ import java.io.Serializable;
 public class PlayerRequest implements Serializable {
     @NotNull
     @Min(0)
-    private Long id;
+    private Long age;
 
     @NotNull
     @NotEmpty

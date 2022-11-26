@@ -1,16 +1,14 @@
 package com.game.dice.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-/**
- * Created by Dipu on 11/24/22.
- */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Response <T>{
-
-    private T data;
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class DiceDto {
+    private int score;
 }

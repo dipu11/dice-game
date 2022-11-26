@@ -28,11 +28,11 @@ import java.util.Collections;
 public class SpringFoxConfig {
 
     private ApiInfo apiInfo() {
-        return new ApiInfo("MyApp Rest APIs",
+        return new ApiInfo("Dice Game Rest APIs",
                 "APIs for MyApp.",
                 "1.0",
                 "Terms of service",
-                new Contact("test", "www.org.com", "test@emaildomain.com"),
+                new Contact("test", "www.org.com", "dipubuet2@gmail.com"),
                 "License of API",
                 "API license URL",
                 Collections.emptyList());
