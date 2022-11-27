@@ -19,7 +19,7 @@ public class PlayerDto implements Serializable {
     private String name;
 
     @JsonProperty(access = JsonProperty.Access.READ_ONLY)
-    private int score;
+    private Integer score;
     public PlayerDto(Long age, String name) {
         this.age = age;
         this.name= name;

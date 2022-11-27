@@ -28,7 +28,7 @@ public class GameInfo {
             if(isDuplicatePlayer(player))
                 throw new GameExceptionHandler("Player with same name already existed!");
 
-            player.setScore(Integer.MIN_VALUE);
+            //player.setScore(Integer.MIN_VALUE);
             this.playerList.add(player);
             log.debug("Player added- name:"+ player.getName()+", age:"+ player.getAge());
             return true;

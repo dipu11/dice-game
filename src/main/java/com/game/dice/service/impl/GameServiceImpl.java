@@ -122,7 +122,7 @@ public class GameServiceImpl implements GameService {
 
                        this.gameInfo.removeCurrentPlayer();
                        this.gameInfo.addPlayer(currentPlayer);
-                       log.info("---> player:"+currentPlayer.getName()+", scored:"+ currentPlayer.getScore());
+                       //log.info("---> player:"+currentPlayer.getName()+", scored:"+ currentPlayer.getScore());
                        flag=true;
                    }
                    else{
@@ -130,6 +130,8 @@ public class GameServiceImpl implements GameService {
                        this.gameInfo.addPlayer(currentPlayer);
                        flag=true;
                    }
+
+                   log.info("---> player:"+currentPlayer.getName()+", scored:"+ currentPlayer.getScore());
 
                    if(currentPlayer.getScore() >= WINNING_SCORE){
                        gameInfo.IS_GAME_ON=Boolean.FALSE;
