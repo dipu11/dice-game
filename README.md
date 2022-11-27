@@ -21,10 +21,12 @@ http://localhost:8080/dice-game-service/swagger-ui/index.html
 - Or, run by maven:  `mvn spring-boot:run`
 
 #### Docker
-- pull the docker image from: dipu11/dice-game
-- Or, 
-- 
+- pull the docker image from: dipu11/dice-game with latest tag
+- command: `docker pull dipu11/dice-game:latest`
+- To create local docker image: `docker build -t dice-game:latest .`
+- Run image: `docker run -p 8080:8080 dipu11/dice-game:latest` [for remote image], to run the local image: replace image name by local image name
 
+#### After running the app, check the console for program's output. delayed by 1 and .5 second for each player and each dice rolling respectively.
 
 ### APIs: Please check the below controller:
 - http://localhost:8080/dice-game-service/swagger-ui/index.html#/game-controller
